@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS whopipe_video_views (
 );
 
 DROP TYPE IF EXISTS department;
+
 CREATE TYPE department AS ENUM (
     'Electronics',
     'Cleaning',
@@ -27,3 +28,5 @@ CREATE TABLE IF NOT EXISTS amazong_products (
     image TEXT,
     category department NOT NULL
 );
+
+

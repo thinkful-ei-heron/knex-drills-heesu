@@ -1,4 +1,3 @@
-//console.log('hello, practice');
 require('dotenv').config();
 const knex = require('knex');
  
@@ -9,15 +8,15 @@ const knexInstance = knex({
 
 console.log('knex and driver installed correctly');
 
-const searchTerm = 'holo';
+//const searchTerm = 'holo';
 
-knexInstance
-  .select('product_id', 'name', 'price', 'category')
-  .from('amazong_products')
-  .where('name', 'ILIKE', `%${searchTerm}%`)
-  .then(result => {
-    console.log(result)
-  });
+// knexInstance
+//   .select('product_id', 'name', 'price', 'category')
+//   .from('amazong_products')
+//   .where('name', 'ILIKE', `%${searchTerm}%`)
+//   .then(result => {
+//     console.log(result)
+//   });
 
 function searchByProduceName(searchTerm) {
   knexInstance
